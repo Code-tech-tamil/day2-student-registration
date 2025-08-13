@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Interactive Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Loading Animation -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="spinner"></div>
+            <h2>Loading Amazing Experience...</h2>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-code"></i>
+                <span>Abi Portfolio</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link active">Home</a></li>
+                <li><a href="#cards" class="nav-link">Dynamic Cards</a></li>
+                <li><a href="#profiles" class="nav-link">Team Profiles</a></li>
+                <li><a href="#modules" class="nav-link">JS Modules</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">Welcome to the Future</h1>
+            <p class="hero-subtitle">Experience cutting-edge web development with stunning animations and interactive features</p>
+            <button class="cta-button" data-tooltip="Explore the magic below">
+                <span>Get Started</span>
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Dynamic Cards Section -->
+    <section id="cards" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Dynamic Card System</h2>
+                <p class="section-description">Create and manage beautiful animated cards with smooth transitions</p>
+            </div>
+            <div class="section-controls">
+                <button id="createCardBtn" class="glass-button" data-tooltip="Add a new animated card">
+                    <i class="fas fa-plus"></i>
+                    Create Card
+                </button>
+            </div>
+            <div id="cardsContainer" class="cards-grid"></div>
+        </div>
+    </section>
+
+    <!-- Profile Cards Section -->
+    <section id="profiles" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Team Profiles</h2>
+                <p class="section-description">Build your dream team with interactive profile cards</p>
+            </div>
+            <div class="section-controls">
+                <button id="addProfileBtn" class="glass-button" data-tooltip="Add a new team member">
+                    <i class="fas fa-user-plus"></i>
+                    Add Profile
+                </button>
+            </div>
+            <div id="profilesContainer" class="profiles-grid"></div>
+        </div>
+    </section>
+
+    <!-- JavaScript Modules Section -->
+    <section id="modules" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">JavaScript Modules Demo</h2>
+                <p class="section-description">Showcasing modular JavaScript architecture</p>
+            </div>
+            <div class="modules-grid">
+                <div class="module-card glass-card">
+                    <div class="module-header">
+                        <i class="fas fa-calculator"></i>
+                        <h3>Math Utils</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="calculation-demo">
+                            <p>Add: 15 + 25 = <span id="addResult">-</span></p>
+                            <p>Multiply: 8 × 7 = <span id="multiplyResult">-</span></p>
+                        </div>
+                        <button id="runMathBtn" class="module-button">Run Calculations</button>
+                    </div>
+                </div>
+                <div class="module-card glass-card">
+                    <div class="module-header">
+                        <i class="fas fa-code-branch"></i>
+                        <h3>Profile Utils</h3>
+                    </div>
+                    <div class="module-content">
+                        <div class="greeting-demo">
+                            <p id="greetingText">Click to see module greeting</p>
+                        </div>
+                        <button id="showGreetingBtn" class="module-button">Show Greeting</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Advanced Interactive Portfolio. Crafted with ❤️ and cutting-edge tech.</p>
+                <div class="social-links">
+                    <a href="#" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="main.js"></script>
+</body>
+</html>
